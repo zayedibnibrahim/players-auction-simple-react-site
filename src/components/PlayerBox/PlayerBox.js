@@ -2,15 +2,18 @@ import React from 'react';
 import './PlayerBox.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const PlayerBox = (props) => {
-    console.log(props.playerData)
-    const {first, last, price, age, position, picture} = props.playerData;
+
+    const {first, last, price, age, Position, picture} = props.playerData;
+    const btnHandler = props.buttonHandler;
     return (
         <div className="card">
-            <img src={picture} alt="players Image" />
+            <img src={picture} alt="Players"/>
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                <h5 className="card-title">{first} {last}</h5>
+                <p className="card-text">Position: {Position}</p>
+                <p className="card-text">Age: {age}</p>
+                <p className="card-text">Price: {price}</p>
+                <button onClick={() => btnHandler(props.playerData)} className="btn btn-danger">Add To Final List</button>
             </div>
         </div>
     );

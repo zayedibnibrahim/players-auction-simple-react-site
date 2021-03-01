@@ -4,3 +4,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 10px;
 }
+.card{
+    display: flex;
+    align-items: center;
+}
+.card img{
+    width: 150px;
+}
