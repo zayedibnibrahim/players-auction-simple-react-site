@@ -13,13 +13,13 @@ const Cart = (props) => {
     return (
         <div>
             <h5>Total Players Selected : {props.selectedPlayer.length}</h5>
-            <p>Total Cost : {totalCost}</p>
+            <p>Total Cost : ${totalCost}</p>
             <h5>Selected Players List:</h5>
                 {
                     playersInCart.map(playerInCart => 
                         <div className="added-player">
                             <p key={playerInCart.id}>Name: {playerInCart.first} {playerInCart.last}</p>
-                            <p key={playerInCart.id}>Price: {playerInCart.price}</p>
+                            <p key={playerInCart.id}>Price: ${playerInCart.price}</p>
                         </div>
                     )
                 }

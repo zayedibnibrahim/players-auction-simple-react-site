@@ -12,7 +12,7 @@ const PlayerBox = (props) => {
                 <h5 className="card-title">{first} {last}</h5>
                 <p className="card-text">Position: {Position}</p>
                 <p className="card-text">Age: {age}</p>
-                <p className="card-text">Price: {price}</p>
+                <p className="card-text">Price: ${price}</p>
                 <button onClick={() => btnHandler(props.playerData)} className="btn btn-danger">Add To Final List</button>
             </div>
         </div>
