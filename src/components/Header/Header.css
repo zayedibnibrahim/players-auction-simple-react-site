@@ -1,0 +1,20 @@
+.header{
+    padding: 10px 100px !important;
+    display: flex;
+    background-color: #dbfbff;
+}
+.header img{
+    width: 60px;
+}
+.header-title{
+    float: right;
+}
+.header-title h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.header-title p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
