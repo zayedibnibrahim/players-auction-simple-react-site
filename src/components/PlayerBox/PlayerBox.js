@@ -18,5 +18,5 @@ const PlayerBox = (props) => {
         </div>
     );
 };
-
+//player box
 export default PlayerBox;
